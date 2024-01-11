@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    padding-top: 65px;
+    padding-bottom: 59px;
+    width: 970px;
+    margin: 0 auto;
+}
+
+div, h1, h2, h3, h4, h5, p{
+    text-align: center;
+}
+
+.logo, .social{
+    display: inline-block;
+}
+
+.logo{
+    width: 500px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.social{
+    width: 460px;
+    text-align: right;
+}
+
+#fb-big{
+    margin-right: 21px;
+}
+
+.logo input {
+    width: 37px;
+}
+
+.social input{
+    width: 25px;
+}
+
+.content-wrapper{
+    width: 800px;
+    margin: 0 auto;
+    color: rgba(0, 0, 0, 0.40);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.search-block {
+    padding-top: 91px;
+    padding-bottom: 92px;
+    background-color:  #FAC960;
+}
+
+.search-block h1{
+    color: #8A6D2F;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 54px;
+}
+
+.search-block input{
+    width: 560px;
+    height: 54px;
+    border: none;
+    border-radius: 2px 0px 0px 2px;
+    margin-top: 40px;
+    padding-left: 36px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 54px;
+}
+
+button{
+    width: 240px;
+    height: 54px;
+    background-color: #A8863D; 
+    color: white;
+    border: none;
+    font-size: 30px;
+    border-radius: 0 2px 2px 0;
+}
+
+h3{
+    color: rgba(0, 0, 0, 0.56);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.lemniscata-block {
+    background-color: #F2F2F2;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.lemniscata-block div{
+    padding-bottom: 56px;
+}
+
+.mobile-block{
+    padding-top: 85px;
+    padding-bottom: 22px;
+}
+
+.mobile-block input{
+    width: 190px;
+    height: 354px;
+}
+
+.mobile-block div{
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+.refer-block{
+    padding-top: 50px;
+    padding-bottom: 55px;
+    background-color: #FAC960;
+}
+
+.refer-block div{
+    padding-bottom: 35px;
+}
+
+.refer-block input{
+    text-align: center;
+    width: 61px;
+    height: 22px;
+    margin-bottom: 59px;
+}
+
+footer{
+    margin-top: 3px;
+    padding-top: 81px;
+    padding-bottom: 81px;
+    background-color: #F2F2F2;
+}
+
+#fb-small{
+    padding-top: 4px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+/* footer div.logo{
+    padding-left: 371px;
+    width: 37px;
+    margin: 1px auto;
+} */
+
+/* #twitter{
+    padding-left: 360px;
+} */
