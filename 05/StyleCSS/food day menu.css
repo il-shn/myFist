@@ -54,7 +54,7 @@ form input{
     height: 74px;
     border-radius: 12px;
 }
-.container div:hover{
+.container:hover div{
     background-color: #EAE2B7;
 }
 .container p{
@@ -63,7 +63,7 @@ form input{
     font-weight: 500;
     margin-top: 8px;
 }
-.container p:hover{
+.container:hover p{
     color:#000;
 }
 .foodType img{
@@ -71,7 +71,7 @@ form input{
     margin-top: 17px;
     opacity: 70%;
 }
-.foodType img:hover{
+.container:hover img{
     opacity: 100%;
 }
 img[src*="desert"]{
