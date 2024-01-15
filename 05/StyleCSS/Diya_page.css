@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(190, 191, 191);
+    height: 1400px;
+    width: 1500px;
+}
+.diya, .ua-square, .ua-cycle{
+    width: 512px;
+    height: 512px;
+
+}
+.diya{
+    background-color: black;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: 75px;
+    z-index: 1;
+}
+.diya img{
+    width: 309px;
+    position: relative;
+    top: 110px;
+}
+.blue{
+    width: 80px;
+    height: 60px;
+    text-align: center;
+    position: absolute;
+    background-color: #FFCE22;
+    border-radius: 6px;
+    left: 216px;
+    bottom: 130px;
+}
+.yellow{
+    width: 80px;
+    height: 30px;
+    position: relative;
+    background-color: #2137FC;
+    border-radius: 6px 6px 0 0;
+}
+.ua-square{
+    background-color: #FFCE22;
+    position: relative;
+    z-index: 3;
+    top: 400px;
+    left: 510px;
+}
+div img[src*="Glyph"]{
+    text-align: center;
+    position: relative;
+    bottom: 132px;
+    left: 56px;
+}
+.ua-cycle{
+    background-color: white;
+    z-index: 2;
+    position: relative;
+    top: 275px;
+    left: 900px;
+    border-style: outset ;
+    border-color: #2137FC;
+    border-left: 2px;
+    border-right: 2px;
+}
+section{
+    position: relative;
+    z-index: 3;
+    top: 34px;
+    left: 34px;
+    background-color: #FFCE22;
+    width: 444px;
+    height: 444px;
+    border-radius: 50%;
+}
+img[src*="round"]{
+width: 444px;
+/* position: relative; */
+}
+section img[src*="Glyph"]{
+    width: 358px;
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    right: 60px;
+}
