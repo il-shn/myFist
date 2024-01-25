@@ -5,6 +5,7 @@ body{
     background-image: url("../images/background.jpeg");
     background-size: contain;
     background-attachment: fixed;
+    background-position: center;
     color: #FFF;
     font-family: Inter;
     font-style: normal;
