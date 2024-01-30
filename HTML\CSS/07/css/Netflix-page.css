@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 body{
+    min-width: 974px;
     background-image: url("../images/background.jpeg");
     background-color: #0F1219;
     background-size: cover;
@@ -25,13 +26,14 @@ header{
     height: 100px;
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
 }
 .main{
     max-width: 810px;
    
 }
 .logo-block{
+    height: 49px;
     display: flex;
     flex-direction: row;
 }
@@ -245,8 +247,10 @@ footer{
     width: 910px;
 
 }
-.movie i{
-    width: 100%;
+.movie img{
+    width: 145px;
+    min-height: 145px;
+
 }
 .age-block{
     width: 100%;
