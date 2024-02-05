@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    /* width: 100%;
+    margin: 0 auto;
+    height: 4735px; */
+}
+.content-wrapper{
+    width: 1080px;
+    margin: 0 auto;
+}
+.item{
+    border: black 1px solid;
+   padding: 10px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1px;
+}
