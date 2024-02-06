@@ -100,3 +100,24 @@
 // let temperature=Number(prompt("Скільки градусів?"));
 // tempResult = temperature > 25 ? "Гаряче" : "Прохолодно";
 // console.log(tempResult);
+
+
+//Додадкове дз
+
+let userAge = Number(prompt("Вкажіть свій вік"));
+let userContry = prompt("Вкажіть свою країну");
+let result = "";
+
+if(userAge>=18 && userContry=="Україна"){
+    result = "Вітаємо, ви маєте право голосу в Україні"
+    // alert("Вітаємо, ви маєте право голосу в Україні")
+}
+else if(userAge>17 && userContry!="Україна"){
+    result = "Перевірте правила голосування у вашій країні"
+    // alert("Перевірте правила голосування у вашій країні")
+}
+else{
+    result = "Ви ще занадто молоді для голосування"
+    // alert("Ви ще занадто молоді для голосування")
+}
+console.log(result)
