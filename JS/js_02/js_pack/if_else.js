@@ -49,13 +49,13 @@
 
 // Завдання 5 Оцінка 
 // let mark = Number(prompt("Оцініть за 10-бальною шкалою"));
-// if (8<=mark<=10){
+// if (8<=mark && mark<=10){
 //     console.log("Відмінно!")
 // }
-// else if(5<=mark<=7){
+// else if(5<=mark && mark<=7){
 //     console.log("Добре")
 // }
-// else if(3<=mark<=4){
+// else if(3<=mark && mark<=4){
 //     console.log("Задовільно")
 // }
 // else if(mark<=2){
@@ -67,7 +67,7 @@
 
 // Завдання 6 Діапазон
 // let num = Number(prompt("Вкажіть якесь число"));
-// if (1<=num<=100){
+// if (1<=num && num<=100){
 //     alert("Число знаходиться в діапазоні")
 // }
 // else{
@@ -83,7 +83,10 @@
 //     result ="Не пройшов";
 // }
 
+// let result;
+// let score = Number(prompt("Скільки очок?"));
 // result = score > 50 ? "Пройшов" : "Не пройшов";
+// console.log(result);
 
 // let tempResult = "";
 // let temperature = 30;
@@ -93,4 +96,7 @@
 //     tempResult ="Прохолодно";
 // }
 
+// let tempResult = "";
+// let temperature=Number(prompt("Скільки градусів?"));
 // tempResult = temperature > 25 ? "Гаряче" : "Прохолодно";
+// console.log(tempResult);
