@@ -93,10 +93,10 @@
 
 // let num = Number(prompt('Введіть число'))
 
-// for(let i=1; i<=10; i++){
-//      console.log(`${i} * ${num} = ${i*num}`)
-//  }
 // function multipleTable(num) {   
+//     for(let i=1; i<=10; i++){
+//          console.log(`${i} * ${num} = ${i*num}`)
+//      }
 // }
 
 
@@ -133,3 +133,4 @@
 //         console.log('Ця планета не в сонячній системі');
 //         break;
 // }
+
