@@ -144,3 +144,4 @@ function arrSumm(params) {
     );
 }
 arrSumm(numberArr)
+console.log(`The final value is ${sum}`);

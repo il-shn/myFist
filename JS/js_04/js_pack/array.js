@@ -120,12 +120,12 @@
 let checkArr = [69, 96, -66, 77, 85, -85, 14, -20, 90, -36]
 
 for (let i = 0; i < checkArr.length; i++) {
-
-  if (checkArr[i]<0) {
-    checkArr[i]=0
+    const el = checkArr[i];
+  if (el<0) {
+    el=0
   }
   else{
-    checkArr[i]>0
+    el>0
   }
 }
 console.log(checkArr);
