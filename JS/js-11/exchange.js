@@ -28,13 +28,34 @@ window.onload = function(){
 
     counter = 0;
 
-    function slider() {
+    function slider2(){
         counter++
         if (counter === 0) {
-            // sliderBox.innerHTML = '<img src="https://cn22.nevsedoma.com.ua/p/26/2612/1601_files/c83cd19e4e1cc0d6bda45e2a8cc1671f.jpg" alt="">'
             let screemFish = document.createElement('img')
             screemFish.setAttribute('src', "https://cn22.nevsedoma.com.ua/p/26/2612/1601_files/c83cd19e4e1cc0d6bda45e2a8cc1671f.jpg")
             sliderBox.appendChild(screemFish)
+        }
+        if (counter === 3) {
+            let lupusFish = document.createElement('img')
+            lupusFish.setAttribute('src', "https://cn22.nevsedoma.com.ua/p/26/2612/1601_files/6b80bf5bcbe32909658f00c5dbf335a2.jpg")
+            sliderBox.appendChild(lupusFish)
+        }
+        if (counter === 6) {
+            let glassBrainFish = document.createElement('img')
+            glassBrainFish.setAttribute('src', "https://cn22.nevsedoma.com.ua/p/26/2612/1601_files/925cee1355230a850b6ded72e28778de.jpg")
+            sliderBox.appendChild(glassBrainFish)
+        }
+        if (counter > 9) {
+            counter ===0
+        }
+    }
+    slider2()
+
+    function slider1() {
+        counter++
+        if (counter === 0) {
+            sliderBox.innerHTML = '<img src="https://cn22.nevsedoma.com.ua/p/26/2612/1601_files/c83cd19e4e1cc0d6bda45e2a8cc1671f.jpg" alt="">'
+            
         }
         if (counter === 3) {
             sliderBox.innerHTML = `<img src="https://cn22.nevsedoma.com.ua/p/26/2612/1601_files/6b80bf5bcbe32909658f00c5dbf335a2.jpg" alt="">
@@ -47,7 +68,7 @@ window.onload = function(){
             counter ===0
         }
     }
-    slider()
+    slider1()
 
     // function slider() {
     //     for (const img of slideArray) {
