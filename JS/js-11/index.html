@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="exchange.js"></script>
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        input{
+            margin: 20px;
+            
+        }
+        
+        .output{
+            border: 1px black solid;
+            border-radius: 3px;
+            width: 200px;
+            height: 30px;
+            margin-left: 350px;
+            font-size: 25px;
+        }
+        .slider{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Конвертуйте гривні (UAH) в долари (USD).</h2>
+    <form action="">
+        <input id="inputUAH" placeholder="Введіть суму в UAH" type="number">
+        <button type="submit">convertation</button>
+        <input id="rateUSD" type="text" placeholder= "Введіть курс долару">
+    </form>
+    <div class="output"></div>
+
+    <div class="sliderBox">
+        
+        
+    </div>
+
+</body>
+</html>
