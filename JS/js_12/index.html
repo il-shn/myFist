@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/form.js"></script>
+    <style>
+        body{
+            box-sizing: border-box;
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container{
+            width: 250px;
+            height: 100px;
+            background-color: black;
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: fantasy;
+            border-top: gray solid 3px;
+            border-left: gray solid 3px;
+            margin-top: 40%;
+        }
+        .hobbyForm{
+            width: 250px;
+            height: 100px;
+            background-color: rgb(125, 68, 4);
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: fantasy;
+            border-top: gray solid 3px;
+            border-left: gray solid 3px;
+            margin-top: 40%;
+        }
+        .info{
+            width: 250px;
+            height: 100px;
+            background-color: rgb(254, 249, 244);
+            color: rgb(12, 10, 10);
+            font-family: Cambria, Cochin, Georgia;
+            border-top: gray solid 3px;
+            border-left: gray solid 3px;
+            border-bottom: gray solid 1px;
+            border-right: gray solid 1px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="colorForm" action="">
+            <label for="green">green</label>
+            <input type="radio" id="green" name="option">
+            <label for="yellow">yellow</label>
+            <input type="radio" id="yellow" name="option">
+            <label for="blue">blue</label>
+            <input type="radio" id="blue" name="option">
+        </form>
+    </div>
+    <form class="hobbyForm" action="">
+        <label for="dancing">dancing</label>
+        <input type="radio" id="dancing" name="option1">
+        <label for="gym">gym</label>
+        <input type="radio" id="gym" name="option1">
+        <label for="crossfit">crossfit</label>
+        <input type="radio" id="crossfit" name="option1">
+    </form>
+    <p>
+        <ul id="list"></ul>
+    </p>
+    <form action="">
+        <select name="country" id="">
+            <option value="1">Chouse country</option>
+            <option value="2">USA</option>
+            <option value="3">China</option>
+            <option value="4">Ukraine</option>
+        </select>
+    </form>
+    <div>
+        <p class="info"></p>
+    </div>
+</body>
+</html>
