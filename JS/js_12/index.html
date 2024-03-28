@@ -40,7 +40,7 @@
             border-left: gray solid 3px;
             margin-top: 40%;
         }
-        .info{
+        .info, .infoBlock{
             width: 250px;
             height: 100px;
             background-color: rgb(254, 249, 244);
@@ -67,16 +67,16 @@
     </div>
     <form class="hobbyForm" action="">
         <label for="dancing">dancing</label>
-        <input type="radio" id="dancing" name="option1">
+        <input type="checkbox" id="dancing" name="option1">
         <label for="gym">gym</label>
-        <input type="radio" id="gym" name="option1">
+        <input type="checkbox" id="gym" name="option1">
         <label for="crossfit">crossfit</label>
-        <input type="radio" id="crossfit" name="option1">
+        <input type="checkbox" id="crossfit" name="option1">
     </form>
     <p>
         <ul id="list"></ul>
     </p>
-    <form action="">
+    <form action="">    
         <select name="country" id="">
             <option value="1">Chouse country</option>
             <option value="2">USA</option>
@@ -87,5 +87,10 @@
     <div>
         <p class="info"></p>
     </div>
+        <select id="select2"></select>
+    <div>
+        <p class="infoBlock"></p>
+    </div>
+
 </body>
 </html>

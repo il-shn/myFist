@@ -59,19 +59,46 @@ window.onload = function(){
     let [...allHobby] = document.querySelectorAll('input[name="option1"]')
     let [...allLabel] = document.querySelectorAll('.hobbyForm label')
 
+    // for (const hobby of allHobby) {
+    //     hobby.onchange = function(){
+    //         if (hobby.checked) {
+    //             console.log(hobby);
+    //             for (const label of allLabel) {
+    //                 if (label.htmlFor === hobby.id) {
+    //                     let li = document.createElement('li')
+    //                     list.appendChild(li)        
+    //                     li.innerText = label.innerText
+    //                 }
+    //             }
+    //         } else {
+    //             for (const label of allLabel) {
+    //                 if (label.htmlFor === hobby.id) {
+    //                     console.log(label.innerText);
+    //                     li.remove()
+                        // list.appendChild(li)        
+                        // li.innerText = label.innerText
+    //                 }
+    //             }
+
+    //         }
+    //     }
+    // }
+    // ------- attempt 2 ------
     for (const hobby of allHobby) {
         hobby.onchange = function(){
             if (hobby.checked) {
-                console.log(hobby);
                 for (const label of allLabel) {
                     if (label.htmlFor === hobby.id) {
-                        console.log(label.innerText);
                         let li = document.createElement('li')
                         list.appendChild(li)        
                         li.innerText = label.innerText
                     }
                 }
-            } 
+            }
+            else {
+                let li = document.querySelector('li')
+                li.remove()
+            }
         }
     }
 
@@ -113,14 +140,29 @@ window.onload = function(){
         }
     })
     
-    
-    
-    let countries = [
-        {country: 'USA', capital: 'Washington', population: '332mln'},
-        {country: 'China', capital: 'Beijing', population: '1,409bln'},
-        {country: 'Ukraine', capital: 'Kiyv', population: '43mln'},
+    // ---------- 2 attempt ----------
+
+    let select2 = document.querySelector('#select2')
+    const countries = ["Chouse","USA","China","Ukraine"] 
+    const countryInfo = [
+        {name: 'Chouse country'},
+        {name: 'USA', capital: 'Washington', population: '332mln'},
+        {name: 'China', capital: 'Beijing', population: '1,409bln'},
+        {name: 'Ukraine', capital: 'Kiyv', population: '43mln'},
     ]
-    
+    countries.forEach(country => {
+        let option = document.createElement('option');
+        option.value = country;
+        option.innerText = country;
+        select2.appendChild(option);
+    });
+    select2.addEventListener('change', function(){
+        let selectValue = this.value;
+        let info2 = countryInfo.find(country=>country.name === selectValue)
+        let infoBlock = document.querySelector('.infoBlock')
+        infoBlock.innerHTML = `Capital: ${info2.capital}, population: ${info2.population}`;
+    });
+
     // for (const option of allOptions) {
     //     if (option.selected) {
     //         console.log('option1');
