@@ -22,53 +22,46 @@ window.onload = function(){
     
     // 2) Створіть слайдер ( зображення що міняє картинку ) кожні 3 секунди,  коли курсор наведено на зображення слайдер зупиняється, коли покидає зображення розпочинає роботу
 
-    let sliderBox = document.querySelector('.sliderBox')
-    let slideArray = document.getElementsByTagName('img')
-    console.log(slideArray);
+    const images = ["images/1.jpeg","images/2.jpeg","images/3.jpeg"]
 
     counter = 0;
-
-    function slider2(){
-        counter++
-        if (counter === 0) {
-            let screemFish = document.createElement('img')
-            screemFish.setAttribute('src', "https://cn22.nevsedoma.com.ua/p/26/2612/1601_files/c83cd19e4e1cc0d6bda45e2a8cc1671f.jpg")
-            sliderBox.appendChild(screemFish)
+    console.log(images.length);
+    function slider(){
+        counter+=1;
+        if (counter >= images.length){
+            counter === 0;
         }
-        if (counter === 3) {
-            let lupusFish = document.createElement('img')
-            lupusFish.setAttribute('src', "https://cn22.nevsedoma.com.ua/p/26/2612/1601_files/6b80bf5bcbe32909658f00c5dbf335a2.jpg")
-            sliderBox.appendChild(lupusFish)
-        }
-        if (counter === 6) {
-            let glassBrainFish = document.createElement('img')
-            glassBrainFish.setAttribute('src', "https://cn22.nevsedoma.com.ua/p/26/2612/1601_files/925cee1355230a850b6ded72e28778de.jpg")
-            sliderBox.appendChild(glassBrainFish)
-        }
-        if (counter > 9) {
-            counter ===0
-        }
+        document.querySelector('img').src = images[counter];
     }
-    slider2()
+    let sliderInterval = setInterval(slider, 3000);
+    let sliderImg = document.querySelector('img');
 
-    function slider1() {
-        counter++
-        if (counter === 0) {
-            sliderBox.innerHTML = '<img src="https://cn22.nevsedoma.com.ua/p/26/2612/1601_files/c83cd19e4e1cc0d6bda45e2a8cc1671f.jpg" alt="">'
+    sliderImg.addEventListener('mouseenter',function(){
+        clearInterval(sliderInterval)
+    })
+    sliderImg.addEventListener('mouseleave', function(){
+        sliderInterval = setInterval(slider, 3000);
+    })
+
+
+    // function slider1() {
+    //     counter++
+    //     if (counter === 0) {
+    //         sliderBox.innerHTML = '<img src="https://cn22.nevsedoma.com.ua/p/26/2612/1601_files/c83cd19e4e1cc0d6bda45e2a8cc1671f.jpg" alt="">'
             
-        }
-        if (counter === 3) {
-            sliderBox.innerHTML = `<img src="https://cn22.nevsedoma.com.ua/p/26/2612/1601_files/6b80bf5bcbe32909658f00c5dbf335a2.jpg" alt="">
-            `
-        }
-        if (counter === 6) {
-            sliderBox.innerHTML = `<img src="https://cn22.nevsedoma.com.ua/p/26/2612/1601_files/925cee1355230a850b6ded72e28778de.jpg" alt="">`
-        }
-        if (counter > 9) {
-            counter ===0
-        }
-    }
-    slider1()
+    //     }
+    //     if (counter === 3) {
+    //         sliderBox.innerHTML = `<img src="https://cn22.nevsedoma.com.ua/p/26/2612/1601_files/6b80bf5bcbe32909658f00c5dbf335a2.jpg" alt="">
+    //         `
+    //     }
+    //     if (counter === 6) {
+    //         sliderBox.innerHTML = `<img src="https://cn22.nevsedoma.com.ua/p/26/2612/1601_files/925cee1355230a850b6ded72e28778de.jpg" alt="">`
+    //     }
+    //     if (counter > 9) {
+    //         counter ===0
+    //     }
+    // }
+    // slider1()
 
     // function slider() {
     //     for (const img of slideArray) {
