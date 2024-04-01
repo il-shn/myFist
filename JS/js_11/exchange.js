@@ -29,17 +29,17 @@ window.onload = function(){
     function slider(){
         counter+=1;
         if (counter >= images.length){
-            counter === 0;
+            counter = 0;
         }
         document.querySelector('img').src = images[counter];
     }
     let sliderInterval = setInterval(slider, 3000);
     let sliderImg = document.querySelector('img');
 
-    sliderImg.addEventListener('mouseenter',function(){
+    sliderImg.addEventListener('mouseover',function(){
         clearInterval(sliderInterval)
     })
-    sliderImg.addEventListener('mouseleave', function(){
+    sliderImg.addEventListener('mouseout', function(){
         sliderInterval = setInterval(slider, 3000);
     })
 
