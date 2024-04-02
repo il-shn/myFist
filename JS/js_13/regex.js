@@ -66,5 +66,5 @@ window.onload = ()=>{
     //     let infoBlock = document.querySelector('.infoBlock')
     //     infoBlock.innerHTML = `Capital: ${info2.capital}, population: ${info2.population}`;
     // });
-
+    
 }
