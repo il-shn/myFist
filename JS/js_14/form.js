@@ -31,6 +31,9 @@ window.onload = function () {
                     btn.style.backgroundColor = 'rgb(29, 29, 183)')
                 btn.addEventListener('mouseleave', ()=>
                     btn.style.backgroundColor = 'rgb(41, 41, 255')
+                btn.onclick = function (){
+                    alert('Дані успішно відправлені')
+                }
             }else{
                 console.log('не підходить пароль');
             }
