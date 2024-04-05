@@ -5,14 +5,18 @@ window.onload = function(){
 
     let textArea = document.querySelector('textarea')
     let section = document.querySelector('section')
+
+    // --- 1 variant -----
     textArea.addEventListener('contextmenu', function(e){
         e.preventDefault();
-    })
-
-    textArea.oncontextmenu = function(){
         section.style.visibility = 'visible'
-
-    }
+    })
+    
+    // --- 2 variant -----
+    // textArea.oncontextmenu = function(e){
+    //     e.preventDefault();
+    //     section.style.visibility = 'visible'
+    // }
 
     // =================== Завдання 'onMouseOver' і 'onMouseOut': ====================================
     // Розмістіть зображення на сторінці,та додайте події де при наведенні курсору на зображення воно збільшується або підсвічується. Коли курсор миші покидає зображення, воно повертається до свого початкового розміру або стилю.
@@ -61,15 +65,12 @@ window.onload = function(){
     let list = document.querySelector('.list')
 
     document.addEventListener('keydown', function(e){
-        switch(e.key){
-            case 'ctrl', 'm':
-                e.preventDefault();
-                list.style.display = 'inherit';
-                break;
-            case 'ctrl', 'k':
-                e.preventDefault();
-                list.style.display = 'none';
+        if (e.key == 'm' && e.ctrlKey){
+            list.style.display = 'block';
         }
+        if(e.key == 'k' && e.ctrlKey){
+            list.style.display ='none';
+        }    
     })
     // ================== v2 =================================
     // Комбіноване завдання 'keydown' і 'keyup' для створення інтерактивного меню: Коли користувач натискає певну клавішу М, з'являється  меню ul елемент в якому 3 li, і зробити можливість  переміщатися по пунктах меню, використовуючи клавіші вгору/вниз змінюючи бекграунд. При натиску клавіші С меню зникає.
