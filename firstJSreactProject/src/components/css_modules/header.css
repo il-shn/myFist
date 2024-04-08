@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+  }
+  header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .logo-block{
+    height: 49px;
+    display: flex;
+    flex-direction: row;
+  }
+  #logo{
+    width: 156px;
+  }
+  .head-title{
+    display: inline-block;
+    position: relative;
+    left: 43px;
+    color: #C8C8C8;
+    font-family: Kyiv*Type Titling;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .head-title::before{
+    content: "";
+    display: inline-block;
+    height: 28px;
+    width: 3px;
+    background-color: #FFF;
+    position: relative;
+    right: 22px;
+    top: 8px;
+  }
+  .girl-block{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .girl-box{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: auto;
+  }
+  #girl{
+    width: 70px;
+     
+  }
+  
