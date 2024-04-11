@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './css_modules/age.css';
+import style from './age.css'
 
 function Age() {
     return(

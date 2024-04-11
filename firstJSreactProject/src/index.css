@@ -3,7 +3,7 @@
 }
 body{
   min-width: 974px;
-  background-image: url("../src/components/images/background.jpeg");
+  background-image: url("./images/background.jpeg");
   background-color: #0F1219;
   background-size: cover;
   background-attachment: fixed;

@@ -1,11 +1,12 @@
 import React from 'react';
-import style from './css_modules/header.css';
-import netflixlogo from './images/netflix_logo.png';
+import style from './headerstyle.css';
+import netflixlogo from './images/netflixlogo.png';
 import avatar from './images/girl.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function Header() {
+function Header(props) {
     return (
+    <>   
         <header>
             <div className={style.logo-block}>
                 <img src={netflixlogo} id="logo" alt="img"/>
@@ -23,6 +24,7 @@ function Header() {
             </div>
             
         </header>
+    </>
     );
 }
 export default Header;

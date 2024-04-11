@@ -1,9 +1,9 @@
 // import { useState } from 'react'
-import Header from './components/header.jsx'
-import Body from './components/Body.jsx'
-import Footer from './components/Footer.jsx'
-import Wrapper from './components/ContentWrapper.jsx'
-import Age from './components/Age.jsx'
+import Header from './components/HeaderFolder/Header'
+import Body from './components/BodyFolder/Body'
+import Footer from './components/FooterFolder/Footer'
+import Wrapper from './components/WrapperFolder/ContentWrapper'
+import Age from './components/AgeFolder/Age'
 import './App.css'
 
 function App() {
